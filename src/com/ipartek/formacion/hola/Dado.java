@@ -2,8 +2,8 @@ package com.ipartek.formacion.hola;
 
 public class Dado {
 
-	static String[] aAlumnos = { "Aaron", "Eneko", "Itsaso", "Ivan", "Guillermo", "Josu", "Ignacio", "Gomez", "Nerea",
-			"Nagore", "Garbiñe" };
+	static String[] aAlumnos = { "Aaron", "Eneko", "Itsaso", "Ivan", "Guillermo", "Lozoya", "Josu", "Ignacio", "Gomez",
+			"Nerea", "Nagore", "Garbiñe", "Egoitz", "Pavel", "Pérez" };
 
 	public static void listar() {
 

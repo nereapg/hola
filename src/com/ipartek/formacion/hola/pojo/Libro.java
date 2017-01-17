@@ -2,7 +2,7 @@ package com.ipartek.formacion.hola.pojo;
 
 public class Libro {
 
-	// atributos
+	// atributos y constantes
 	public String titulo;
 	public String autor;
 	public int numeroPaginas;

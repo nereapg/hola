@@ -1,6 +1,6 @@
 package com.ipartek.formacion.hola;
 
-import com.ipartek.formacion.hola.pojo.Libro;
+import com.ipartek.formacion.hola.pojo.LibroNoEncapsulado;
 
 /**
  * clase para realizar un 'Hello world
@@ -21,7 +21,7 @@ public class Hola {
 		// asignar un valor a una variable en funcion de una condición
 		// (condicion)? true : false
 		int edad = (3 > 100) ? 18 : 34;
-		System.out.println("edad" + edad);
+		System.out.println("edad: " + edad);
 
 		// declarar variables
 		int variableEntera;
@@ -45,23 +45,27 @@ public class Hola {
 		System.out.println("Hello world");
 
 		// instanciar un objeto de la clase Libro
-		Libro libroJava = new Libro();
+		LibroNoEncapsulado libroJava = new LibroNoEncapsulado();
 		libroJava.numeroPaginas = 320;
 		libroJava.nombre = "Java 7";
 		libroJava.autor = "Roberto Montero Miguel";
+
 		System.out.println(libroJava.describete());
 
 		System.out.println("Escribir 10 paginas nuevas");
 		// for (int i = 0; i < 10; i++) {
+
 		libroJava.escribir(10);
 		// }
+		System.out.println(libroJava.describete());
 
-		Libro libroPHP = new Libro();
+		LibroNoEncapsulado libroPHP = new LibroNoEncapsulado();
 		libroPHP.numeroPaginas = 725;
 		libroPHP.nombre = "PHP";
 		libroPHP.autor = "Anonimo";
 		System.out.println(libroPHP.describete());
 		libroPHP.escribir(20);
+		System.out.println(libroPHP.describete());
 
 	}
 }

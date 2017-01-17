@@ -30,10 +30,10 @@ public class UtilidadesTest {
 	void testSumaTonta() {
 
 		assertEquals("no suma bien", 5, Utilidades.sumaTonta(2, 3));
-		assertEquals("num1 negativo", 0, Utilidades.sumaTonta(-2, 3));
-		assertEquals("numeros negativo", 0, Utilidades.sumaTonta(-2, -3));
-		assertEquals("num2 negativo", 0, Utilidades.sumaTonta(2, -3));
-		assertEquals("suma mayor que 100", 0, Utilidades.sumaTonta(1, 100));
+		assertEquals("num1 negativo, retorno 0", 0, Utilidades.sumaTonta(-2, 3));
+		assertEquals("numeros negativos, retorno 0", 0, Utilidades.sumaTonta(-2, -3));
+		assertEquals("num2 negativo, retorno 0", 0, Utilidades.sumaTonta(2, -3));
+		assertEquals("suma mayor que 100, retorno 0", 0, Utilidades.sumaTonta(1, 100));
 
 	}
 
@@ -41,5 +41,4 @@ public class UtilidadesTest {
 	public void testNoFallaNunca() {
 		assertTrue(1 < 2);
 	}
-
 }
