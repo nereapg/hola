@@ -16,6 +16,11 @@ public class VehiculoElectrico extends Vehiculo {
 		this.capacidadBaterias = MIN_CAPACIDAD_BATERIA;
 	}
 
+	@Override
+	public void arrancar() {
+		System.out.println("bateria enchufada");
+	}
+
 	public float getCapacidadBaterias() {
 		return capacidadBaterias;
 	}

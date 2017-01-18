@@ -16,6 +16,11 @@ public class VehiculoDiesel extends Vehiculo {
 		this.combustible = MIN_COMBUSTIBLE;
 	}
 
+	@Override
+	public void arrancar() {
+		System.out.println("arrancado");
+	}
+
 	public int getCombustible() {
 		return combustible;
 	}
