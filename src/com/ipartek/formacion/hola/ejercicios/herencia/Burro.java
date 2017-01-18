@@ -1,4 +1,4 @@
-package com.ipartek.recetas.ejercicios.herencia;
+package com.ipartek.formacion.hola.ejercicios.herencia;
 
 import java.util.ArrayList;
 
