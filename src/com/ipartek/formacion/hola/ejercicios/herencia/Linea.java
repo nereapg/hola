@@ -8,5 +8,8 @@ public class Linea extends ObjetoGrafico {
 		super(x, y);
 		this.longitud = 0;
 	}
-
+	@Override
+	public void dibujar() {
+		System.out.println("pintar Linea");
+	}
 }
