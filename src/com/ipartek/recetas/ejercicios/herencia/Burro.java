@@ -10,6 +10,7 @@ public class Burro extends Animal implements Conducible, Cocinable, Vendible {
 
 	public Burro(String nombre) {
 		super();
+		setRaza("Burro");
 		this.nombre = nombre;
 	}
 
@@ -42,7 +43,7 @@ public class Burro extends Animal implements Conducible, Cocinable, Vendible {
 
 	@Override
 	public void generarFactura() {
-		System.out.println("Factura");
+		System.out.println("Factura generada");
 	}
 
 	@Override

@@ -9,6 +9,10 @@ public class Pajaro extends Animal implements Volador, Vendible {
 		this.puedeVolar = puedeVolar;
 	}
 
+	public Pajaro(String raza, float precio) {
+		super(raza, precio);
+	}
+
 	public boolean isPuedeVolar() {
 		return puedeVolar;
 	}
