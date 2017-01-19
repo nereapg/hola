@@ -3,6 +3,7 @@ package com.ipartek.formacion.hola.ejercicios.herencia;
 public class Pajaro extends Animal implements Volador, Vendible {
 
 	boolean puedeVolar;
+	private int numHuevosSemana;
 
 	public Pajaro(boolean puedeVolar) {
 		super();
@@ -11,6 +12,15 @@ public class Pajaro extends Animal implements Volador, Vendible {
 
 	public Pajaro(String raza, float precio) {
 		super(raza, precio);
+		this.numHuevosSemana = 0;
+	}
+
+	public int getNumHuevosSemana() {
+		return numHuevosSemana;
+	}
+
+	public void setNumHuevosSemana(int numHuevosSemana) {
+		this.numHuevosSemana = numHuevosSemana;
 	}
 
 	public boolean isPuedeVolar() {

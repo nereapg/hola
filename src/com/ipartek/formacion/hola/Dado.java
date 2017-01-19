@@ -33,6 +33,23 @@ public class Dado {
 
 		System.out.println("-----------LISTADO------------");
 		listar();
+		
+		//Bubble sort
+		int aDesordenado[] = new int[] { 3, 0, 1, 8, 7, 2, 5, 4, 6, 9 };
+
+		System.out.println("Array antes de Bubble Sort");
+		for (int i = 0; i < aDesordenado.length; i++) {
+			System.out.print(aDesordenado[i] + " ");
+		}
+
+		bubbleSort(aDesordenado);
+
+		System.out.println("");
+
+		// imprimir array despues de ordenar
+		System.out.println("Array despues de Bubble Sort");
+		for (int i = 0; i < aDesordenado.length; i++) {
+			
 
 	}
 

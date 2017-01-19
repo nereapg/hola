@@ -2,11 +2,14 @@ package com.ipartek.formacion.hola.pojo;
 
 import java.util.ArrayList;
 
-public class Receta {
+public class Receta implements Comparable<Receta> {
 
 	// atributos
 
 	public String IMG_DEFAULT = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6GvzNqfRMDYXbhRQm1t7h75SulI1_Vx50a4UgPoDJotTIwjX5";
+	final public static String FACIL = "facil";
+	final public static String MODERADO = "moderado";
+	final public static String DIFICIL = "dificil";
 	private String titulo;
 	private String imagen;
 	// private Ingrediente[] aIngredientes;
@@ -221,5 +224,12 @@ public class Receta {
 			}
 		}
 		return rdo;
+	}
+
+	@Override
+	public int compareTo(Receta r) {
+
+		// pasamos toLowerCase para ignorar mayusculas y minusculas
+		return this.getTitulo().toLowerCase().compareTo(r.getTitulo().toLowerCase());
 	}
 }

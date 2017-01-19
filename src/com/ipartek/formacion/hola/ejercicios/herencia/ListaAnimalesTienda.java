@@ -23,8 +23,10 @@ public class ListaAnimalesTienda {
 		b2.setPrecio(150);
 
 		Pajaro p1 = new Pajaro("Buitre", 75f);
+		p1.setPuedeVolar(true);
 
 		Pajaro p2 = new Pajaro("Gallina", 25f);
+		p2.setPuedeVolar(false);
 
 		// añadir en ArrayList
 
@@ -42,8 +44,8 @@ public class ListaAnimalesTienda {
 
 			if (v instanceof Pajaro) {
 				p = (Pajaro) v;
-				System.out.println(b.getRaza() + "[" + b.getNombre() + "]");
-				System.out.println("Precio " + b.getPrecio());
+				System.out.println(p.getRaza());
+				System.out.println("Precio " + p.getPrecio());
 				System.out.println("Comestible: No");
 				if (p.isPuedeVolar()) {
 					System.out.println("Volador: Si");
@@ -60,10 +62,9 @@ public class ListaAnimalesTienda {
 			} else {
 				System.out.println("No sabemos que es " + v.toString());
 				// System.out.println(animal.toString());
-				System.out.println("Generando factura...");
-				System.out.println();
+				// System.out.println("Generando factura...");
 			}
-
+			System.out.println();
 		}
 
 	}

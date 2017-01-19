@@ -16,44 +16,43 @@ public class Utilidades {
 	static public int getNumeroAleatorio(int maximoValor) {
 		return (int) (Math.random() * maximoValor);
 	}
-	// *********************************
 
-static public int[] bubbleSort(int[] aDesordenado) {
-		
+	static public int[] bubbleSort(int[] aDesordenado) {
+
 		int temp = 0;
-        for(int i=0; i < aDesordenado.length; i++){
-                for(int j=1; j<(aDesordenado.length-i); j++){
-                       
-                        if(aDesordenado[j-1] > aDesordenado[j]){
-                                temp = aDesordenado[j-1];
-                                aDesordenado[j-1] = aDesordenado[j];
-                                aDesordenado[j] = temp;
-                        }                         
-                }
-          }
-        return aDesordenado;
-}
-public static void main(String[] args) {
-   
-   int aDesordenado[] = new int[]{3, 0, 1, 8, 7, 2, 5, 4, 6, 9};
-  
-   System.out.println("Array antes de Bubble Sort");
-   for(int i=0; i < aDesordenado.length; i++){
-           System.out.print(aDesordenado[i] + " ");
-   }
-  
-   bubbleSort(aDesordenado);
-  
-   System.out.println("");
-  
-   //imprimir array despues de ordenar
-   System.out.println("Array despues de Bubble Sort");
-   for(int i=0; i < aDesordenado.length; i++){
-           System.out.print(aDesordenado[i] + " ");
-   }
-}
+		for (int i = 0; i < aDesordenado.length; i++) {
+			for (int j = 1; j < (aDesordenado.length - i); j++) {
 
-//*****************************************************
+				if (aDesordenado[j - 1] > aDesordenado[j]) {
+					temp = aDesordenado[j - 1];
+					aDesordenado[j - 1] = aDesordenado[j];
+					aDesordenado[j] = temp;
+				}
+			}
+		}
+		return aDesordenado;
+	}
+
+	public static void main(String[] args) {
+
+		int aDesordenado[] = new int[] { 3, 0, 1, 8, 7, 2, 5, 4, 6, 9 };
+
+		System.out.println("Array antes de Bubble Sort");
+		for (int i = 0; i < aDesordenado.length; i++) {
+			System.out.print(aDesordenado[i] + " ");
+		}
+
+		bubbleSort(aDesordenado);
+
+		System.out.println("");
+
+		// imprimir array despues de ordenar
+		System.out.println("Array despues de Bubble Sort");
+		for (int i = 0; i < aDesordenado.length; i++) {
+			System.out.print(aDesordenado[i] + " ");
+		}
+	}
+
 	/**
 	 * 
 	 * @param num1
